@@ -81,13 +81,13 @@ my %opt = (
     "skipsize"            => 0,
     "checkversion"        => 0,
     "updateversion"       => 0,
-    "buffers"             => 0,
+    "buffers"             => 1,
     "passwordfile"        => 0,
     "bannedports"         => '',
     "maxportallowed"      => 0,
     "outputfile"          => 0,
     "noprocess"           => 0,
-    "dbstat"              => 0,
+    "dbstat"              => 1,
     "nodbstat"            => 0,
     "server-log"          => '',
     "tbstat"              => 0,
@@ -96,7 +96,7 @@ my %opt = (
     "nocolstat"           => 0,
     "idxstat"             => 0,
     "noidxstat"           => 0,
-    "nomyisamstat"        => 0,
+    "nomyisamstat"        => 1,
     "nostructstat"        => 0,
     "sysstat"             => 0,
     "nosysstat"           => 0,
@@ -7415,15 +7415,15 @@ mysql_pfs;                # Print Performance schema info
 mariadb_threadpool;       # Print MariaDB ThreadPool stats
 mysql_myisam;             # Print MyISAM stats
 mysql_innodb;             # Print InnoDB stats
-mariadb_aria;             # Print MariaDB Aria stats
-mariadb_tokudb;           # Print MariaDB Tokudb stats
-mariadb_xtradb;           # Print MariaDB XtraDB stats
+#mariadb_aria;             # Print MariaDB Aria stats
+#mariadb_tokudb;           # Print MariaDB Tokudb stats
+#mariadb_xtradb;           # Print MariaDB XtraDB stats
 
 #mariadb_rockdb;           # Print MariaDB RockDB stats
 #mariadb_spider;           # Print MariaDB Spider stats
 #mariadb_connect;          # Print MariaDB Connect stats
-mariadb_galera;            # Print MariaDB Galera Cluster stats
-get_replication_status;    # Print replication info
+#mariadb_galera;            # Print MariaDB Galera Cluster stats
+#get_replication_status;    # Print replication info
 make_recommendations;      # Make recommendations based on stats
 dump_result;               # Dump result if debug is on
 close_outputfile;          # Close reportfile if needed

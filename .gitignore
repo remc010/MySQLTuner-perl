@@ -12,6 +12,7 @@ contents/*
 reports_*
 golang/prog-*
 .vscode
+.idea
 test_db/**
 result*
 result_*
