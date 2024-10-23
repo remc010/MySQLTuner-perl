@@ -442,10 +442,7 @@ sub hr_bytes_rnd {
     return "0B" unless defined($num);
     return "0B" if $num eq "NULL";
 
-    if ( $num >= ( 1024**3 ) ) {    # GB
-        return int( ( $num / ( 1024**3 ) ) ) . "G";
-    }
-    elsif ( $num >= ( 1024**2 ) ) {    # MB
+    if ( $num >= ( 1024**2 ) ) {    # MB
         return int( ( $num / ( 1024**2 ) ) ) . "M";
     }
     elsif ( $num >= 1024 ) {           # KB
